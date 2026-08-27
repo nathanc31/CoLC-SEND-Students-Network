@@ -131,3 +131,13 @@ function applyNavScrollEffect() {
 window.addEventListener("resize", () => {
     applyMobileUI();
 });
+window.addEventListener("load", () => {
+    if (localStorage.getItem("ssnRulesAccepted")) {
+        document.getElementById("ssnPopup").style.display = "none";
+    }
+});
+
+function closePopup() {
+    localStorage.setItem("ssnRulesAccepted", "true");
+    document.getElementById("ssnPopup").style.display = "none";
+}
