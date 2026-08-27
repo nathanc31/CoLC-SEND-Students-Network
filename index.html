@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
 
-    <!-- Essential for mobile app layout -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>SEND Students' Network – Home</title>
@@ -13,7 +12,34 @@
 </head>
 <body>
 
-    <!-- Pride Header -->
+    <!-- Welcome & Rules Popup -->
+    <div id="ssnPopup" class="popup">
+        <div class="popup-content">
+
+            <h2>🌟 Welcome to the SEND Students' Network</h2>
+
+            <p><strong>📋 Community Rules</strong></p>
+
+            <p>😊 Be kind to everyone.</p>
+
+            <p>🤝 Respect disabilities, differences and lived experiences.</p>
+
+            <p>💬 Use friendly and respectful language.</p>
+
+            <p>🔒 Keep personal information private.</p>
+
+            <p>❤️ Support and encourage other students.</p>
+
+            <p>🏫 Follow College and Students' Union rules.</p>
+
+            <p><strong>🚫 No bullying, harassment or discrimination.</strong></p>
+
+            <button onclick="closePopup()">✅ Continue</button>
+
+        </div>
+    </div>
+
+    <!-- Header -->
     <div class="header">
         SEND Students' Network
     </div>
@@ -25,11 +51,12 @@
         <a href="support.html">Support</a>
         <a href="games.html">Games</a>
         <a href="vacancies.html">Vacancies</a>
+
         <button class="hamburger" aria-label="Open menu">
-    <span></span>
-    <span></span>
-    <span></span>
-</button>
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
     </nav>
 
     <!-- Welcome Section -->
@@ -38,6 +65,7 @@
         <h2>Welcome 👋</h2>
 
         <div class="block">
+
             <p class="stagger-wide" style="transition-delay:0.2s">
                 Welcome to our SEND Students’ Network intranet.
             </p>
@@ -49,104 +77,101 @@
             <p class="stagger-wide" style="transition-delay:0.6s">
                 Here you’ll find updates, support information, team roles, and ways to get involved.
             </p>
+
         </div>
+
     </section>
 
-    <!-- Who’s Who Section -->
+    <!-- Who's Who -->
     <section class="section parallax">
 
-    <h2>2026-27: Who’s Who</h2>
+        <h2>2026-27: Who’s Who</h2>
 
-    <!-- Disabled Students' Officer -->
-    <div class="profile-card">
-        <div class="profile-icon"></div>
-        <div class="profile-info">
-            <h3>Disabled Students' Officer</h3>
-            <p>TBC (Oct 2026 onwards)</p>
+        <div class="profile-card">
+            <div class="profile-icon"></div>
+            <div class="profile-info">
+                <h3>Disabled Students' Officer</h3>
+                <p>TBC (Oct 2026 onwards)</p>
+            </div>
         </div>
-    </div>
 
-    <!-- Chair -->
-    <div class="profile-card">
-        <div class="profile-icon">
-            <img src="nc.jpg" alt="Nathan Cain">
+        <div class="profile-card">
+            <div class="profile-icon">
+                <img src="nc.jpg" alt="Nathan Cain">
+            </div>
+            <div class="profile-info">
+                <h3>Chair</h3>
+                <p>Nathan Cain (until Oct 2026)</p>
+            </div>
         </div>
-        <div class="profile-info">
-            <h3>Chair</h3>
-            <p>Nathan Cain (until Oct 2026)</p>
-        </div>
-    </div>
 
-    <!-- Vice Chair – Adina -->
-    <div class="profile-card">
-        <div class="profile-icon">
-            <img src="bo.jpeg" alt="Boshra Omar">
+        <div class="profile-card">
+            <div class="profile-icon">
+                <img src="bo.jpeg" alt="Boshra Omar">
+            </div>
+            <div class="profile-info">
+                <h3>Vice Chair</h3>
+                <p>Boshra Omar (until Oct 2026)</p>
+            </div>
         </div>
-        <div class="profile-info">
-            <h3>Vice Chair</h3>
-            <p>Boshra Omar (until Oct 2026)</p>
-        </div>
-    </div>
 
-    <!-- Vice Chair – Boshra -->
-    <div class="profile-card">
-        <div class="profile-icon">
-            <img src="aa.jpeg" alt="Adina Avram">
+        <div class="profile-card">
+            <div class="profile-icon">
+                <img src="aa.jpeg" alt="Adina Avram">
+            </div>
+            <div class="profile-info">
+                <h3>Vice Chair</h3>
+                <p>Adina Avram (TBC)</p>
+            </div>
         </div>
-        <div class="profile-info">
-            <h3>Vice Chair</h3>
-            <p>Adina Avram (TBC)</p>
+
+        <div class="profile-card">
+            <div class="profile-icon"></div>
+            <div class="profile-info">
+                <h3>Campus Rep – Arts Centre</h3>
+                <p>TBC</p>
+            </div>
         </div>
-    </div>
 
-    <!-- Campus Rep – Arts Centre -->
-    <div class="profile-card">
-        <div class="profile-icon"></div>
-        <div class="profile-info">
-            <h3>Campus Rep – Arts Centre</h3>
-            <p>TBC</p>
+        <div class="profile-card">
+            <div class="profile-icon">
+                <img src="cs.jpeg" alt="Cristina Stoica">
+            </div>
+            <div class="profile-info">
+                <h3>Campus Rep – Learning Exchange (LEX)</h3>
+                <p>Cristina Stoica</p>
+            </div>
         </div>
-    </div>
 
-    <!-- Campus Rep – LEX -->
-    <div class="profile-card">
-        <div class="profile-icon">
-            <img src="cs.jpeg" alt="Cristina Stoica">
+        <div class="profile-card">
+            <div class="profile-icon"></div>
+            <div class="profile-info">
+                <h3>Campus Rep – Clarence Street</h3>
+                <p>TBC</p>
+            </div>
         </div>
-        <div class="profile-info">
-            <h3>Campus Rep – Learning Exchange (LEX)</h3>
-            <p>Cristina Stoica</p>
+
+        <div class="profile-card">
+            <div class="profile-icon"></div>
+            <div class="profile-info">
+                <h3>Campus Rep – Duke Street</h3>
+                <p>TBC</p>
+            </div>
         </div>
-    </div>
 
-    <!-- Campus Rep – Clarence Street -->
-    <div class="profile-card">
-        <div class="profile-icon"></div>
-        <div class="profile-info">
-            <h3>Campus Rep – Clarence Street</h3>
-            <p>TBC</p>
-        </div>
-    </div>
+    </section>
 
-    <!-- Campus Rep – Duke Street -->
-    <div class="profile-card">
-        <div class="profile-icon"></div>
-        <div class="profile-info">
-            <h3>Campus Rep – Duke Street</h3>
-            <p>TBC</p>
-        </div>
-    </div>
+    <!-- Calendar -->
+    <section class="events-section fullwidth-calendar">
 
-</section>
+        <h2>📅 See What’s Happening This Year (2026–27)</h2>
 
-<section class="events-section fullwidth-calendar">
-    <h2>📅 See What’s Happening This Year (2026–27)</h2>
+        <iframe
+            src="https://outlook.office365.com/owa/calendar/3b6f8490714946e784b79f9074b1258d@colc.ac.uk/27795695673e46499fc9a331c49092e82759143512402186538/calendar.html"
+            class="calendar-frame">
+        </iframe>
 
-    <iframe 
-        src="https://outlook.office365.com/owa/calendar/3b6f8490714946e784b79f9074b1258d@colc.ac.uk/27795695673e46499fc9a331c49092e82759143512402186538/calendar.html"
-        class="calendar-frame">
-    </iframe>
-</section>
+    </section>
 
     <footer>
         SEND Students' Network — The City of Liverpool College
