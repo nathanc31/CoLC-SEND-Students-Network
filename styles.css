@@ -272,9 +272,9 @@ footer {
     }
 }
 .ssn-button {
-  --lsn-bg: #4c6fff;
-  --lsn-bg-hover: #3a57d6;
-  --lsn-glow: rgba(76, 111, 255, 0.6);
+  --ssn-bg: #4c6fff;
+  --ssn-bg-hover: #3a57d6;
+  --ssn-glow: rgba(76, 111, 255, 0.6);
 
   display: inline-flex;
   align-items: center;
@@ -316,7 +316,7 @@ footer {
   filter: brightness(1.05);
 }
 
-.lsn-button:hover::before {
+.ssn-button:hover::before {
   opacity: 1;
 }
 
