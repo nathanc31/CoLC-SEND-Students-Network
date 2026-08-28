@@ -55,22 +55,15 @@ main, section, nav, .header, footer {
    HEADER — DARK PRIDE
    ============================================================ */
 .header {
-    /* FIXED: reduced top padding so gradient no longer touches logo */
     padding: var(--space-sm) var(--space-md) var(--space-md);
-
-    background: linear-gradient(
-        #0a2e7a,
-        #3a1f4a
-    );
+    background: none;        /* removes gradient */
     color: #fff;
     text-align: center;
     font-size: var(--font-title);
     font-weight: 700;
     letter-spacing: 0.03em;
-    box-shadow: var(--shadow-strong);
+    box-shadow: none;        /* optional: remove shadow */
     text-wrap: balance;
-
-    /* FIXED: ensures header never overlaps logo */
     margin-top: 10px;
 }
 
