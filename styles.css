@@ -257,12 +257,14 @@ nav.open .hamburger span:nth-child(3) {
 }
 
 .profile-icon {
-    width: 70px;
-    height: 70px;
-    background: #3a3a3a;
-    border-radius: 50%;
-    margin-right: var(--space-sm);
-    overflow: hidden;
+width: 70px;
+height: 70px;
+min-width: 70px;
+flex-shrink: 0;
+background: #3a3a3a;
+border-radius: 50%;
+margin-right: var(--space-sm);
+overflow: hidden;
 }
 
 .profile-icon img {
